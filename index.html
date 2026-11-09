@@ -3,12 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Talha Yigit</title>
+  <meta name="description" content="Talha Yigit, student at HTL Wien West (Media Technology) in Vienna. I build robots, Linux setups and things that move.">
+  <meta name="theme-color" content="#0a0c10">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Talha Yigit">
+  <meta property="og:description" content="Student at HTL Wien West (Media Technology). I build robots, Linux setups and things that move.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/TalhaYigit42/dotfiles/main/screenshots/desktop.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0c10'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' font-weight='700' text-anchor='middle' fill='%235fe3a1'%3ETY%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello!</h1>
-    <div class="introduction">My name is Talha Yigit and I am 19 years old</div>
-    <div class="introduction"></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="term">
+    <div class="bar" aria-hidden="true"><span>talha@vienna: ~/portfolio</span><span>zsh</span></div>
+
+    <div class="screen">
+      <header class="hero">
+        <p class="cmd"><span class="ps">talha@vienna:~$</span> whoami</p>
+        <h1>Talha Yigit</h1>
+        <p class="lead">Student at HTL Wien West (Media Technology). I build robots, Linux setups and things that move.</p>
+        <p class="loc">Vienna, Austria</p>
+        <p><a class="btn" href="https://github.com/TalhaYigit42">[ GitHub ]</a></p>
+      </header>
+
+      <main id="main">
+        <section aria-labelledby="about-h">
+          <h2 id="about-h" class="cmd"><span class="ps">$</span> cat about.txt</h2>
+          <p>I'm in my final year at HTL Wien West and graduate in June 2027. I'm into robotics, embedded systems (ESP32), computer vision and Linux. I like building complete things, with mechanics, electronics and code all in one project. I run Arch Linux with niri and a small Proxmox homelab.</p>
+        </section>
+
+        <section aria-labelledby="projects-h">
+          <h2 id="projects-h" class="cmd"><span class="ps">$</span> ls projects/</h2>
+
+          <article class="card">
+            <figure class="media portrait">
+              <img src="https://raw.githubusercontent.com/TalhaYigit42/scara-chess/main/docs/ik_sketch.jpg" alt="Hand-written inverse kinematics sketch on paper" width="1200" height="1600" loading="lazy">
+              <figcaption>my inverse kinematics notes</figcaption>
+            </figure>
+            <div class="body">
+              <h3><a href="https://github.com/TalhaYigit42/scara-chess">scara-chess/</a></h3>
+              <p class="status">work in progress</p>
+              <p>A chess robot with a 2-link SCARA arm that plays on a real wooden board. A camera detects moves with OpenCV, Stockfish picks a reply, and the arm moves the pieces.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Python</li><li>OpenCV</li><li>python-chess</li><li>ESP32</li><li>PCA9685</li><li>inverse kinematics</li><li>3D printing</li>
+              </ul>
+              <a class="more" href="https://github.com/TalhaYigit42/scara-chess">github.com/TalhaYigit42/scara-chess →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="media">
+              <figure>
+                <img src="https://raw.githubusercontent.com/TalhaYigit42/dotfiles/main/screenshots/desktop.jpg" alt="Screenshot of my niri desktop on Arch Linux" width="1920" height="1080" loading="lazy">
+              </figure>
+              <figure>
+                <img src="https://raw.githubusercontent.com/TalhaYigit42/dotfiles/main/screenshots/sidebar-tabs.jpg" alt="Screenshot of the Quickshell sidebar tabs" width="1576" height="1000" loading="lazy">
+              </figure>
+            </div>
+            <div class="body">
+              <h3><a href="https://github.com/TalhaYigit42/dotfiles">dotfiles/</a></h3>
+              <p>My niri setup on Arch Linux with a Quickshell sidebar (11 tabs: apps, wallpapers, audio, network, task manager, weather, calendar, dev tools …), Waybar and small helper scripts.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>QML</li><li>Quickshell</li><li>niri</li><li>Bash</li><li>Python</li>
+              </ul>
+              <a class="more" href="https://github.com/TalhaYigit42/dotfiles">github.com/TalhaYigit42/dotfiles →</a>
+            </div>
+          </article>
+        </section>
+
+        <section aria-labelledby="more-h">
+          <h2 id="more-h" class="cmd"><span class="ps">$</span> ls projects/more/</h2>
+          <div class="mini">
+            <article>
+              <h3>restaurant-website/</h3>
+              <p>Built and deployed for a real client.</p>
+              <ul class="tags" aria-label="Technologies"><li>Vue 3</li><li>Vuetify</li><li>Sanity CMS</li></ul>
+            </article>
+            <article>
+              <h3>voice-coffee-machine/</h3>
+              <p>School project in project management class.</p>
+            </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="skills-h">
+          <h2 id="skills-h" class="cmd"><span class="ps">$</span> cat skills.conf</h2>
+          <dl class="skills">
+            <div><dt>languages</dt><dd>Python, C# (Unity), C++ (Arduino/ESP32), JavaScript, QML, Bash, SQL, HTML/CSS</dd></div>
+            <div><dt>web</dt><dd>Vue 3, Vuetify, Sanity CMS, PostgreSQL</dd></div>
+            <div><dt>game_dev</dt><dd>Unity (2D, 3D, VR on Meta Quest 3), Rider</dd></div>
+            <div><dt>vision_ml</dt><dd>OpenCV, NumPy</dd></div>
+            <div><dt>embedded</dt><dd>ESP32, Arduino, Raspberry Pi, PWM/servos, I2C, UART</dd></div>
+            <div><dt>repair</dt><dd>Smartphone and PC repair, soldering and hot-air rework</dd></div>
+            <div><dt>cad_fab</dt><dd>OpenSCAD, KiCad, 3D printing</dd></div>
+            <div><dt>linux_infra</dt><dd>Arch Linux, niri/Wayland, Proxmox homelab (VMs, containers), Git/GitHub</dd></div>
+            <div><dt>networking</dt><dd>Switch port and workstation configuration (hospital IT internship), GNS3, home mesh</dd></div>
+            <div><dt>apis</dt><dd>REST/JSON (Open-Meteo weather in my sidebar, GNS3 REST API client)</dd></div>
+            <!-- TODO: "AI" part of "APIs & AI" has no items yet -->
+          </dl>
+        </section>
+
+        <section aria-labelledby="now-h">
+          <h2 id="now-h" class="cmd"><span class="ps">$</span> cat now.md</h2>
+          <ul class="plain">
+            <li><strong>scara-chess:</strong> servo control and the ESP32 serial bridge</li>
+            <li><strong>NetDuel</strong>, my diploma project: a game that turns GNS3 networking labs into duels and tutorials for first- and second-year students (frontend is my part)</li>
+            <li><strong>The Passengers:</strong> a VR horror game in Unity for Meta Quest 3, built in a team of five at school</li>
+            <li><strong>Matura</strong> in June 2027</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="next-h">
+          <h2 id="next-h" class="cmd"><span class="ps">$</span> cat next.md</h2>
+          <ul class="plain">
+            <li>Finish scara-chess: print and assemble the arm, then play a full game against it</li>
+            <li>Move the robot from laptop + ESP32 to a Raspberry Pi 5 with my own HAT PCB (KiCad)</li>
+            <li>An EMG-controlled robotic hand: muscle signals from the forearm drive servo fingers</li>
+            <li>After the Matura (June 2027): a bachelor's in electrical engineering. I'm planning to apply to KAIST, HKUST and KU Leuven</li>
+            <li>Long term: research in robotics or brain-computer interfaces. Not too sure yet, but I want to make a positive impact on people's lives</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="contact-h">
+          <h2 id="contact-h" class="cmd"><span class="ps">$</span> contact</h2>
+          <p><a class="btn" href="https://github.com/TalhaYigit42">[ GitHub ]</a></p>
+        </section>
+      </main>
+
+      <footer>
+        <span>© 2026 Talha Yigit</span>
+        <a href="https://github.com/TalhaYigit42">GitHub</a>
+      </footer>
+      <p class="cmd end" aria-hidden="true"><span class="ps">talha@vienna:~$</span> <span class="cursor"></span></p>
+    </div>
+  </div>
 </body>
 </html>
